@@ -10,6 +10,9 @@ namespace html_converter_dotnet_core_cs
             SimpleConversion.Run();
             Console.WriteLine("SimpleConversion is completed...");
 
+            FileConversion.Run();
+            Console.WriteLine("Conversion with file content and anchor tag completed...");
+
             ConvertToByteArray.Run();
             Console.WriteLine("ConvertToByteArray is completed...");
 
