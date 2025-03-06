@@ -1,7 +1,7 @@
 ﻿Imports ceTe.DynamicPDF.HtmlConverter
 
 Namespace html_converter_dotnet_core_vb
-    Class JavaScriptConversion
+    Class JavaScriptCssConversion
 
         Private Shared samplePageWithCss As String = "<!DOCTYPE html><html><head ><style>" _
             & "body {background-color: lightblue;}" _

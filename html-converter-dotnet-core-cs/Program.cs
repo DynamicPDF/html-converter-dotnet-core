@@ -20,7 +20,7 @@ namespace html_converter_dotnet_core_cs
             ConvertToByteArray.Run();
             Console.WriteLine("ConvertToByteArray is completed...");
 
-            JavaScriptConversion.Run();
+            JavaScriptCssConversion.Run();
             Console.WriteLine("JavaScriptConversion is completed...");
 
             /*
