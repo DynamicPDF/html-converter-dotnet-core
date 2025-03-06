@@ -7,26 +7,38 @@ namespace html_converter_dotnet_core_cs
     {
         static void Main(string[] args)
          {
+            Util.CreatePath("Output");
+
+
             SimpleConversion.Run();
             Console.WriteLine("SimpleConversion is completed...");
 
-            FileConversion.Run();
-            Console.WriteLine("Conversion with file content and anchor tag completed...");
+
+            HtmlConversionUsingString.Run();
+            Console.WriteLine("HtmlConversionUsingString is completed...");
 
             ConvertToByteArray.Run();
             Console.WriteLine("ConvertToByteArray is completed...");
 
-            HtmlConversionUsingString.Run();
-            Console.WriteLine("HtmlConversionUsingString is completed...");
-            
-            WithConversionOptions.Run();
-            Console.WriteLine("WithConversionOptions is completed...");
-            
-            AsyncConversion.Run();
-            Console.WriteLine("AsyncConversion was started...");
+            JavaScriptConversion.Run();
+            Console.WriteLine("JavaScriptConversion is completed...");
 
-            Console.WriteLine("Completed...");
-            Console.ReadLine();
+            /*
+                        FileConversion.Run();
+                        Console.WriteLine("Conversion with file content and anchor tag completed...");
+
+                       
+
+
+                        WithConversionOptions.Run();
+                        Console.WriteLine("WithConversionOptions is completed...");
+
+                        AsyncConversion.Run();
+                        Console.WriteLine("AsyncConversion was started...");
+
+                        Console.WriteLine("Completed...");
+                        Console.ReadLine();
+            */
         }
     }
 }

@@ -10,7 +10,7 @@ namespace html_converter_dotnet_core_cs
     {
         public static void Run()
         {
-            string contents = File.ReadAllText(FileUtility.GetPath("../html-converter-dotnet-core-cs/Resources/html-with-anchor.html"));
+            string contents = File.ReadAllText(Util.GetPath("../html-converter-dotnet-core-cs/Resources/html-with-anchor.html"));
 
             Converter.Convert(contents, "FileConversion.pdf");
         }

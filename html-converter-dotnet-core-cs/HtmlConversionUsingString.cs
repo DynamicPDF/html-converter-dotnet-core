@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 using ceTe.DynamicPDF.HtmlConverter;
 
 namespace html_converter_dotnet_core_cs
@@ -15,7 +13,7 @@ namespace html_converter_dotnet_core_cs
                         "<td>300</td></tr><tr><td>400</td><td>500</td><td>600</td></tr></table></body></html>";
 
             // Convert HTML to PDF with the default conversion options
-            Converter.Convert(sampleHtml, "HtmlConversion.pdf");
+            Converter.Convert(sampleHtml, Util.GetPath("Output/HtmlConversionUsingString-output.pdf"));
         }
     }
 }
