@@ -2,6 +2,8 @@ Imports System
 
 Module Program
     Sub Main(args As String())
+        Util.CreatePath("Output")
+
         SimpleConversion.Run()
         Console.WriteLine("SimpleConversion is completed...")
 
@@ -17,7 +19,14 @@ Module Program
         AsyncConversion.Run()
         Console.WriteLine("AsyncConversion was started...")
 
-        Console.WriteLine("Completed...")
-        Console.ReadLine()
+        CssFileConversion.Run()
+        Console.WriteLine("CssFileConversion is completed...")
+
+        ImageLocalExample.Run()
+        Console.WriteLine("ImageLocalExample is completed...")
+
+        JavaScriptCssConversion.Run()
+        Console.WriteLine("JavaScriptCssConversion is completed...")
+
     End Sub
 End Module

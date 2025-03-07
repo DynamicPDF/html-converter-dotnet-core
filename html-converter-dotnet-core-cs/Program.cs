@@ -10,24 +10,27 @@ namespace html_converter_dotnet_core_cs
             Util.CreatePath("Output");
 
 
-      //      SimpleConversion.Run();
+            SimpleConversion.Run();
             Console.WriteLine("SimpleConversion is completed...");
 
 
-    //        HtmlConversionUsingString.Run();
+            HtmlConversionUsingString.Run();
             Console.WriteLine("HtmlConversionUsingString is completed...");
 
-     //       ConvertToByteArray.Run();
+            ConvertToByteArray.Run();
             Console.WriteLine("ConvertToByteArray is completed...");
 
-    //        JavaScriptCssConversion.Run();
+            JavaScriptCssConversion.Run();
             Console.WriteLine("JavaScriptConversion is completed...");
 
-     //       CssFileConversion.Run();
+            CssFileConversion.Run();
             Console.WriteLine("CssFileConversion is completed...");
 
             ImageLocalExample.Run();
             Console.WriteLine("ImageLocalExample is completed...");
+
+            AsyncConversion.Run();
+            Console.WriteLine("AsyncConversionis completed...");
 
             /*
                         FileConversion.Run();
@@ -38,9 +41,6 @@ namespace html_converter_dotnet_core_cs
 
                         WithConversionOptions.Run();
                         Console.WriteLine("WithConversionOptions is completed...");
-
-                        AsyncConversion.Run();
-                        Console.WriteLine("AsyncConversion was started...");
 
                         Console.WriteLine("Completed...");
                         Console.ReadLine();
