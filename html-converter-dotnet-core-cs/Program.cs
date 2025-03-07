@@ -10,18 +10,24 @@ namespace html_converter_dotnet_core_cs
             Util.CreatePath("Output");
 
 
-            SimpleConversion.Run();
+      //      SimpleConversion.Run();
             Console.WriteLine("SimpleConversion is completed...");
 
 
-            HtmlConversionUsingString.Run();
+    //        HtmlConversionUsingString.Run();
             Console.WriteLine("HtmlConversionUsingString is completed...");
 
-            ConvertToByteArray.Run();
+     //       ConvertToByteArray.Run();
             Console.WriteLine("ConvertToByteArray is completed...");
 
-            JavaScriptCssConversion.Run();
+    //        JavaScriptCssConversion.Run();
             Console.WriteLine("JavaScriptConversion is completed...");
+
+     //       CssFileConversion.Run();
+            Console.WriteLine("CssFileConversion is completed...");
+
+            ImageLocalExample.Run();
+            Console.WriteLine("ImageLocalExample is completed...");
 
             /*
                         FileConversion.Run();
