@@ -13,7 +13,6 @@ namespace html_converter_dotnet_core_cs
             SimpleConversion.Run();
             Console.WriteLine("SimpleConversion is completed...");
 
-
             HtmlConversionUsingString.Run();
             Console.WriteLine("HtmlConversionUsingString is completed...");
 
@@ -35,19 +34,15 @@ namespace html_converter_dotnet_core_cs
             BasePathExample.Run();
             Console.WriteLine("BasePathExample conversion is completed...");
 
-            /*
-                        FileConversion.Run();
-                        Console.WriteLine("Conversion with file content and anchor tag completed...");
-
-                       
+            FileConversion.Run();
+            Console.WriteLine("Conversion with file content and anchor tag completed...");
 
 
-                        WithConversionOptions.Run();
-                        Console.WriteLine("WithConversionOptions is completed...");
+            WithConversionOptions.Run();
+            Console.WriteLine("WithConversionOptions is completed...");
 
-                        Console.WriteLine("Completed...");
-                        Console.ReadLine();
-            */
+            Console.WriteLine("Completed...");
+
         }
     }
 }

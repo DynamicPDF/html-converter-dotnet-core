@@ -1,19 +1,20 @@
 ﻿Imports ceTe.DynamicPDF.HtmlConverter
 Friend Class WithConversionOptions
     Friend Shared Sub Run()
-        ' Create a conversion options class
-        Dim options As ConversionOptions = New ConversionOptions(PageSize.Letter, PageOrientation.Portrait, 50.0F)
+        Dim taleOfTwoCities As String = "https://www.gutenberg.org/files/98/98-h/98-h.htm"
+        Dim resolvePath As Uri = New Uri(taleOfTwoCities)
+        Dim leftRightMarginsPts As Double = 36
+        Dim topBottomMarginsPts As Double = 144
 
-        ' Set Metadata for the PDF
-        options.Author = "ceTe Software With Conversion Options Example"
-        options.Creator = "ceTe Software"
-        options.Producer = "HTML Converter"
-
-        ' Set Header and Footer text
-        options.Header = "<div style=""text-align:center;display:inline-block;width: 100%;font-size:12px;""><span class=""date""></span></div>"
-        options.Footer = "<div style=""text-align:center;display:inline-block;width: 100%;font-size:12px;"">Page <span class=""pageNumber""></span> of <span class=""totalPages""></span></div>"
-
-        ' Convert HTML to PDF with the conversion options specified
-        Converter.Convert(New Uri("https://www.google.com"), "WithConversionOptions.pdf", options)
+        Dim conversionOptions As ConversionOptions = New ConversionOptions(PageSize.Letter,
+  PageOrientation.Portrait, leftRightMarginsPts, topBottomMarginsPts)
+        conversionOptions.Author = "Charles Dickens"
+        conversionOptions.Creator = "James B"
+        conversionOptions.Title = "A Tale of Two Cities"
+        conversionOptions.Subject = "Guttenberg press version of Charles Dickens\'s" &
+  "A Tale of Two Cities."
+        conversionOptions.Header = "<div style = 'text-align:center;width:100%" &
+  ";font-size:15em;'>A Tale of Two Cities</div>"
+        Converter.Convert(resolvePath, Util.GetPath("Output/WithConversionOptions-out.pdf"), conversionOptions)
     End Sub
 End Class
