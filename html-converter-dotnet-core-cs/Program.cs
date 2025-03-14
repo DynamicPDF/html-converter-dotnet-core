@@ -30,7 +30,10 @@ namespace html_converter_dotnet_core_cs
             Console.WriteLine("ImageLocalExample is completed...");
 
             AsyncConversion.Run();
-            Console.WriteLine("AsyncConversionis completed...");
+            Console.WriteLine("AsyncConversion is completed...");
+
+            BasePathExample.Run();
+            Console.WriteLine("BasePathExample conversion is completed...");
 
             /*
                         FileConversion.Run();

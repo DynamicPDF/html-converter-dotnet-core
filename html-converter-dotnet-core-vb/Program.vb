@@ -28,5 +28,8 @@ Module Program
         JavaScriptCssConversion.Run()
         Console.WriteLine("JavaScriptCssConversion is completed...")
 
+        BasePathExample.Run()
+        Console.WriteLine("BasePathExample is completed...")
+
     End Sub
 End Module
