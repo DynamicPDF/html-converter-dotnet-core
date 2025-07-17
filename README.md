@@ -23,7 +23,7 @@ The easiest way to install DynamicPDF HTML Converter for .NET is by obtaining th
 
 [NuGet Package ID: ceTe.DynamicPDF.HtmlToPDFResources](https://www.nuget.org/packages/ceTe.DynamicPDF.HtmlToPDFResources)
 
-### DynamicPDF Converter Information
+### DynamicPDF HTML Converter Information
 
 DynamicPDF HTML Converter for .NET is a highly efficient API for converting HTML from URLs, local HTML files, and from HTML text into PDF documents. It supports synchronous and asynchronous conversion options and can output to a byte array or a file. DynamicPDF HTML Converter for .NET is a lightweight and easy-to-use library for converting your HTML documents into PDFs.
 
