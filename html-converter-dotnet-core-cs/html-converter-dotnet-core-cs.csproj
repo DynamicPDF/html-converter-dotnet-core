@@ -11,4 +11,8 @@
     <PackageReference Include="ceTe.DynamicPDF.HtmlConverter.NET" Version="1.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+
 </Project>
