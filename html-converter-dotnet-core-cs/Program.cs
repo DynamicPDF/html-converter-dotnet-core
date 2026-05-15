@@ -8,16 +8,19 @@ namespace html_converter_dotnet_core_cs
         static void Main(string[] args)
          {
             Util.CreatePath("Output");
-            
-         //   SimpleConversion.Run(Util.GetPath("Output/SimpleConversion.pdf"));
-         //   Console.WriteLine("SimpleConversion is completed...");
 
-        //    string inputPath = Util.GetPath("../html-converter-dotnet-core-cs/Resources/products.html");
-        //    SimpleConversion2.Run(inputPath, Util.GetPath("Output/"));
-        //    Console.WriteLine("SimpleConversion2 is completed...");
+            //   SimpleConversion.Run(Util.GetPath("Output/SimpleConversion.pdf"));
+            //   Console.WriteLine("SimpleConversion is completed...");
 
-            EventHandlingExample.Run(Util.GetPath("Output/EventHandling.pdf"));
-            Console.WriteLine("EventHandlingExample is completed...");
+            //    string inputPath = Util.GetPath("../html-converter-dotnet-core-cs/Resources/products.html");
+            //    SimpleConversion2.Run(inputPath, Util.GetPath("Output/"));
+            //    Console.WriteLine("SimpleConversion2 is completed...");
+
+            //      EventHandlingExample.Run(Util.GetPath("Output/EventHandling.pdf"));
+            //     Console.WriteLine("EventHandlingExample is completed...");
+
+            CancelationTokenExample.RunAsync().GetAwaiter().GetResult();
+            Console.WriteLine("CancelationTokenExample is completed...");
 
             /*
                         HtmlConversionUsingString.Run();

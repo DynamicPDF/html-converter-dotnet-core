@@ -40,5 +40,7 @@ Module Program
         EventHandlingExample.Run(Util.GetPath("Output/event_output.pdf"))
         Console.WriteLine("EventHandlingExample is completed...")
 
+        CancelationTokenExample.RunAsync().GetAwaiter().GetResult()
+
     End Sub
 End Module
